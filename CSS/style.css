@@ -240,3 +240,74 @@ nav menuitem {
      /* border: 2px solid black; */
      z-index: -5;
  }
+
+
+ /* Section for Top nes & headlines */
+
+ #headlines
+ {
+    display: flex;
+    /* flex-direction: column; */
+    position: relative;
+    align-items: center;
+    justify-content: center;
+ }
+
+ #headlines::before
+ {
+   content: "";
+   position: absolute;
+   background-color: rgb(255,255,240);
+   /* opacity: 0.859; */
+   height: 100%;
+   width: 100%;
+   z-index: -7;
+ }
+
+ .container-1
+ {
+    height: 200px;
+    width: 200px;
+    margin: 100px 0px;
+    border: 2px solid black;
+ }
+
+ #top-news
+ {
+    height: 1000px;
+    width: 900px;
+    margin-left: -200px;
+    padding: 20px 20px;
+    display: flex;
+    flex-direction: column;
+    margin-top: 500px;
+ }
+
+ .container-2
+ {
+    height: 150px;
+    width: 100%;
+    border: 2px solid black;
+    margin: 10px 0px;
+ }
+
+ #line
+ {
+    height: 800px;
+    width: 100px;
+    margin-top: 300px;
+ }
+
+ #line img
+ {
+    width: 70px;
+    height: 100%;
+ }
+
+#headlines
+{
+   height: 800px;
+   /* width: 300px; */
+   /* margin-right: -100px; */
+   margin-top: 300px;
+}

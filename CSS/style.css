@@ -242,15 +242,13 @@ nav menuitem {
  }
 
 
- /* Section for Top nes & headlines */
-
+ /* Section for Top news */
  #headlines
  {
-    display: flex;
-    /* flex-direction: column; */
-    position: relative;
+    position:relative ;
     align-items: center;
     justify-content: center;
+    display: flex;
  }
 
  #headlines::before
@@ -266,48 +264,29 @@ nav menuitem {
 
  .container-1
  {
-    height: 200px;
-    width: 200px;
-    margin: 100px 0px;
+    height: 700px;
+    width: 600px;
     border: 2px solid black;
+    padding: 20px 20px;
+    margin: 50px 0px;
  }
 
  #top-news
  {
-    height: 1000px;
-    width: 900px;
-    margin-left: -200px;
-    padding: 20px 20px;
+    width: 800px;
     display: flex;
     flex-direction: column;
-    margin-top: 500px;
  }
 
  .container-2
  {
-    height: 150px;
+    height: 115px;
     width: 100%;
+    padding: 10px 2px;
     border: 2px solid black;
-    margin: 10px 0px;
+    margin-bottom: 5px;
  }
 
- #line
- {
-    height: 800px;
-    width: 100px;
-    margin-top: 300px;
- }
 
- #line img
- {
-    width: 70px;
-    height: 100%;
- }
-/* 
-#headlines
-{
-   height: 800px;
-   /* width: 300px; */
-   /* margin-right: -100px; */
-   /* margin-top: 300px;
-} */ */
+
+ 

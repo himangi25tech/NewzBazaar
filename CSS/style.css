@@ -407,7 +407,78 @@ nav menuitem {
  }
 
 
+/* Section for headlines */
 
+#line
+{
+   display: flex;
+   flex-direction: column;
+   position: relative;
+   align-items: center;
+   justify-content: center;
+   padding: 5px 10px;
+   border: none;
+   border-left: 4px solid rgb(108,76,53);
+}
 
+.box-1
+{
+   height: 200px;
+   width: 100%;
+   border: 2px solid black;
+}
 
+#summary
+{
+   height: 500px;
+   margin-top: 0px;
+   display: flex;
+   flex-direction: column;
+   position: relative;
+   border: none;
+}
+
+#main
+{
+   height: 100px;
+   width: 100%;
+   /* border: 1px solid red; */
+   background: url("/IMG/6.Headlines.png") center center/cover;
+}
+
+.container-5
+{
+   height: 100px;
+   width: 100%;
+   /* border: 1px solid red; */
+   margin-top: 2px;
+
+}
+
+.hover-underline-animation {
+   display: inline-block;
+   position: relative;
+   color: black;
+   font-family: 'Nanum Myeongjo', serif;
+   font-size: 15px;
+ }
+ 
+ .hover-underline-animation:after {
+   content: '';
+   position: absolute;
+   width: 100%;
+   transform: scaleX(0);
+   height: 2px;
+   bottom: 0;
+   left: 0;
+   background-color: #901E2E;
+   transform-origin: bottom right;
+   transition: transform 0.25s ease-out;
+ }
+ 
+ .hover-underline-animation:hover:after {
+   transform: scaleX(1);
+   transform-origin: bottom left;
+ }
+ 
  

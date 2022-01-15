@@ -269,6 +269,8 @@ nav menuitem {
     border: 2px solid black;
     padding: 20px 20px;
     margin: 50px 0px;
+    /* display: flex;
+    flex-direction: row; */
  }
 
  #top-news
@@ -276,6 +278,7 @@ nav menuitem {
     width: 800px;
     display: flex;
     flex-direction: column;
+    border: none;
  }
 
  .container-2
@@ -283,9 +286,127 @@ nav menuitem {
     height: 115px;
     width: 100%;
     padding: 10px 2px;
-    border: 2px solid black;
+    border-bottom: 2px solid #A68566;
     margin-bottom: 5px;
+    border-radius: 20px;
+    cursor: pointer;
+    transition: 0.5s;
+    display: flex;
+    position: relative;
+    /* box-shadow: 0px 0px 1.5px 1.5px #A68566; */
+    font-family: 'Nanum Myeongjo', serif;
  }
+
+ .container-2:hover
+ {
+   box-shadow: 0px 0px 7.5px 1px #A68566;
+   color: #A68566;
+ }
+
+ .even
+ {
+    display: flex;
+    flex-direction: row-reverse;
+ }
+
+ .img-news
+ {
+    /* margin-right: 2px; */
+    border: 2px solid none;
+    margin-left: 2px;
+    height: 100px;
+    width:150px;
+    margin-top: -4px;
+    margin-bottom: 0px;
+    border-radius: 15px;
+    margin-right: 0px;
+    background: url("/IMG/5.News.jpg") center center/cover ;
+    opacity: 0.85;
+    transition: 0.5s;
+ }
+
+ .img-news:hover
+ {
+    opacity: 1;
+ }
+
+ .container-3
+ {
+    padding: 2px 2px;
+    margin: 2px 2px;
+    margin-top: 7px;
+ }
+
+ .icons
+ {
+    display: flex;
+    position: relative;
+    margin: 2px 2px;
+    padding: 2px 2px;
+    align-items: center;
+    justify-content: center;
+    margin-right: -500px;
+
+ }
+ .icon-even
+ {
+    display: flex;
+    position: relative;
+    margin: 2px 2px;
+    padding: 2px 2px;
+    align-items: center;
+    justify-content: center;
+    margin-right: 0px;
+    margin-left: -500px;
+    margin-top: 10px;
+
+ }
+
+ .container-4
+ {
+    padding: 2px 2px;
+    margin-right: 10px;
+ }
+
+ .container-4:hover
+ {
+    
+ }
+
+ #btn-1
+ {
+    align-items: center;
+    justify-content: center;
+    border: none;
+    cursor: unset;
+    display: unset;
+ }
+
+ #btn-1:hover
+ {
+    box-shadow: unset;
+ }
+
+ .img-more
+ {
+    margin-left: 330px;
+    border-radius: 50px;
+    width: 70px;
+    height: 70px;
+    border: none;
+    cursor: pointer;
+    background-color: transparent;
+    transition: 0.8s;
+    padding: 2px 2px;
+ }
+
+ .img-more:hover
+ {
+    background-color: rgba(255, 255, 240, 0.925);
+    box-shadow: 0px 0px 4px 4px #A68566;
+ }
+
+
 
 
 

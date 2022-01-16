@@ -426,6 +426,32 @@ nav menuitem {
    height: 200px;
    width: 100%;
    border: 2px solid black;
+   position:relative ;
+   align-items: center;
+   justify-content: center;
+   display: flex;
+}
+#slideshow-news
+{
+   height: 300px;
+   width: 100%;
+   border:none;
+   position:relative ;
+   align-items: center;
+   justify-content: center;
+   display: flex;
+}
+
+#slideshow-news::before
+{
+   content: "";
+   position: absolute;
+   background: url("/IMG/12.GIF") center center/cover;
+   /* opacity: 0.859; */
+   height: 150%;
+   width: 100%;
+   z-index: 1;
+   margin-top: 15px;
 }
 
 #summary
@@ -473,7 +499,7 @@ nav menuitem {
    left: 0;
    background-color: #901E2E;
    transform-origin: bottom right;
-   transition: transform 0.25s ease-out;
+   transition: transform 0.45s ease-out;
  }
  
  .hover-underline-animation:hover:after {
@@ -482,3 +508,88 @@ nav menuitem {
  }
  
  
+
+
+ /* Section for subscription */
+
+ #subscription
+ {
+    position:relative ;
+    align-items: center;
+    justify-content: center;
+    display: flex;
+ }
+
+ #subscription::before
+ {
+   content: "";
+   position: absolute;
+   background-color: rgb(255,255,240);
+   /* opacity: 0.859; */
+   height: 100%;
+   width: 100%;
+   z-index: -8;
+ }
+
+ .box-2
+ {
+    display: flex;
+    flex-direction: column;
+    height: 500px;
+    width: 100%;
+    /* border: 2px solid black; */
+    padding: 20px 20px ;
+    margin: 20px 0px;
+    margin-top: 50px;
+    align-items: center;
+    justify-content: center;
+    position: relative;
+    background: url("/IMG/14.Subscription-bg.png") center center/cover;
+    color: rgb(119,198,223);
+    font-family: 'Cinzel', serif;
+    font-size: 3.5rem;
+    font-weight: bolder;
+    
+ }
+
+
+
+ .container-6
+ {
+    height: 200px;
+    width: 80%;
+    /* border: 2px solid red; */
+    display: flex;
+    position: relative;
+    align-items: center;
+    justify-content: center;
+ }
+
+ #btn-2
+ {
+    height: 100px;
+ }
+
+ #btn-2 button
+ {
+    height: 80%;
+    width: 400px;
+    cursor: pointer;
+    border: none;
+    border-radius: 50px;
+    box-shadow: 0px 3px 2px 1px black;
+    background-color: rgb(194,171,140);
+    font-size: 1.5rem;
+    font-family: 'Spartan', sans-serif;
+    transition: 0.5s;
+ }
+
+ #btn-2 button:hover
+ {
+    background-color: rgb(132,166,153);
+ }
+
+ #write
+ {
+    height: 300px;
+ }

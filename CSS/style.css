@@ -518,6 +518,7 @@ nav menuitem {
     align-items: center;
     justify-content: center;
     display: flex;
+
  }
 
  #subscription::before
@@ -592,4 +593,37 @@ nav menuitem {
  #write
  {
     height: 300px;
+ }
+
+
+ /* Section for national */
+
+ #national
+ {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    position: relative;
+
+ }
+
+ #national::before
+ {
+   content: "";
+   position: absolute;
+   background-color: rgb(255,255,240);
+   /* opacity: 0.859; */
+   height: 100%;
+   width: 100%;
+   z-index: -7;
+ }
+
+ #national-logo
+ {
+    height: 100px;
+    width: 100%;
+    border: 2px solid black;
+    padding: 10px 10px;
+    
  }

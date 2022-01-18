@@ -645,7 +645,8 @@ nav menuitem {
     position: relative;
     height: 45px;
     width: 100%;
-    border: 2px solid red;
+    border: 2px solid transparent;
+    /* box-shadow: 0px 0px 0px 2px gray; */
     justify-content: center;
     align-items: center;
     background-color: whitesmoke;
@@ -653,10 +654,14 @@ nav menuitem {
 
  .container-7
  {
+    display: flex;
     height: 90%;
     width: 150px;
-    border: 2px solid green;
+    /* border: 2px solid green; */
     margin-left: 20px;
+    align-items: center;
+    justify-content: center;
+    transition: 0.5s ease;
  }
 
  #national-home
@@ -664,7 +669,13 @@ nav menuitem {
     display: flex;
     align-items: center;
     justify-content: center;
+    cursor: pointer;
 
+ }
+
+ #national-home:hover
+ {
+    background-color: unset;
  }
 
  .active
@@ -672,9 +683,113 @@ nav menuitem {
 
  }
 
- #national-home a
- {
-    height: 100%;
-    width: 20px;
- }
+.container-7 a
+{
+   text-decoration: none;
+   text-transform: uppercase;
+   color: rgb(14,63,64);
+   font-family: 'Cormorant Garamond', serif;
+   font-weight: bolder;
 
+} 
+
+.container-7:hover
+{
+   background-color: rgb(205,147,65);
+   opacity: 0.7;
+   
+}
+
+#national-trend
+{
+   display: flex;
+   padding: 10px;
+   height: 50px;
+   border-bottom: 2px solid grey;
+
+}
+
+.container-8
+{
+   display: flex;
+   align-items: center;
+   justify-content: center;
+   margin: 0px 10px;
+   color: rgb(167, 164, 164);
+   height: 100%;
+   /* width: 150px; */
+   padding: 0px 10px;
+   border: 2px solid rgb(167, 164, 164);
+   border-radius: 20px;
+   transition: 0.3s ease;
+}
+
+.container-8:hover
+{
+   color: black;
+   border: 2px solid black;
+   border-radius: 20px;
+}
+
+.container-8 a:hover
+{
+   color: black;
+}
+
+#national-trending
+{
+   border: none;
+}
+
+#national-trending:hover
+{
+   color: rgb(167, 164, 164);
+}
+.container-8 a
+{
+   text-decoration: none;
+   color: gray;
+   transition: 0.3s ease;
+}
+/* Section for national headlines */
+
+#national-headlines
+{
+   display: flex;
+   align-items: center;
+   justify-content: center;
+
+}
+.container-9
+{
+   display: flex;
+   align-items: center;
+   justify-content: center;
+   position: relative;
+}
+
+.container-9::before
+{
+   content: "";
+   position: absolute;
+   background-color: rgb(255,255,240);
+   /* opacity: 0.859; */
+   height: 100%;
+   width: 100%;
+   z-index: -7;
+   padding: 0px;   
+}
+
+.slider-container
+{
+   display: flex;
+   align-items: center;
+   justify-content: center;
+   flex-direction: column;
+   height: 300px;
+   width: 300px;
+   border: 2px solid red;
+   padding: 20px 20px;
+   margin: 30px 0px;
+
+}

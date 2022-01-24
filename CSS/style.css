@@ -772,7 +772,8 @@ nav menuitem {
 {
    content: "";
    position: absolute;
-   background-color: rgb(255,255,240);
+   /* background-color: rgb(255,255,240); */
+   background-color: whitesmoke;
    /* opacity: 0.859; */
    height: 100%;
    width: 100%;
@@ -787,7 +788,22 @@ nav menuitem {
 {
    display: flex;
    padding: 10px 10px;
+   position: relative;
+   width: 100%;
    
+   
+}
+#national-headlines::before
+{
+   content: "";
+   position: absolute;
+   background-color: rgb(255,255,240);
+   opacity: 0.6;
+   /* opacity: 0.859; */
+   height: 100%;
+   width: 100%;
+   z-index: -7;
+
 }
 
 .container-10
@@ -797,22 +813,79 @@ nav menuitem {
    height: 300px;
    width: 250px;
    margin: 10px 10px;
-   border: 2px solid red;
+   /* border: 2px solid red; */
    align-items: center;
    justify-content: center;
    padding: 20px;
    position: relative;
+   background: url("/IMG/16.slideshow.jpg") center center/cover;
+
    
 }
 
 .trans-box
 {
-   margin-bottom: -150px;
+   margin-bottom: -180px;
+   font-family: 'Julius Sans One', sans-serif;
+   /* border: 2px solid rgb(108,76,53); */
+   width: 100%;
+   padding: 10px;
+   padding-bottom: -25px;
+   background-color: whitesmoke;
+   opacity: 0.8;
+
+   width: 250px;
+   transition: 0.3s;
 
 }
 
+.trans-box:hover
+{
+   margin-bottom: -180px;
+   font-family: 'Julius Sans One', sans-serif;
+   /* border: 2px solid rgb(108,76,53); */
+   width: 100%;
+   padding: 10px;
+   padding-bottom: -25px;
+   background-color: whitesmoke;
+   opacity: 1;
+
+   width: 250px;
+
+}
 .trans-box a
 {
-   text-decoration: none;
+   /* text-decoration: none; */
    color: rgb(108,76,53);
+   /* transform: scaleX(0);
+   transition: all 0.3s ease-in-out; */
+   position: relative;
+   text-decoration: none;
+   transition: all 0.3s ease-in-out;
+   
+   
+
 }
+
+/* .trans-box:before
+{
+   content: "";
+  position: absolute;
+  width: 100%;
+  height: 2px;
+  bottom: 0;
+  left: 0;
+  background-color: rgb(108,76,53);
+  visibility: hidden;
+  transform: scaleX(0);
+  transition: all 0.3s ease-in-out;
+} */
+
+
+.trans-box a:hover
+{
+   text-decoration: underline;
+  /* transform: scaleX(0.8); */
+  width: 80%;
+}
+

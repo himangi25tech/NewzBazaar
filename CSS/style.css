@@ -1122,3 +1122,47 @@ nav menuitem {
    font-weight: lighter;      
 }
 
+.container-14
+{
+   display: flex;
+   flex-direction: row;
+   /* border: 2px solid red; */
+   padding: 10px 10px;
+   position: relative;
+
+}
+
+.stories-section
+{
+   display: flex;
+   flex-direction: column;
+   height: 330px;
+   /* border: 2px solid black; */
+   border-bottom: 1px solid gray;
+   box-shadow: 0px 0px 6px 0px black;
+
+   margin-left: 10px;
+   background-color: white;
+   padding: 5px 5px;
+   transition: transform 0.3s;
+   font-family: 'Nanum Myeongjo', serif;
+}
+
+.stories-section:hover
+{
+   transform: scale(1.1);
+   cursor: pointer;
+}
+
+.story-img-1
+{
+   height: 230px;
+   width: 100%;
+   margin-bottom: 10px;
+   /* border: 2px solid blue; */
+   background: url("/IMG/19.story-img.jpg") center center/cover;
+
+}
+
+
+

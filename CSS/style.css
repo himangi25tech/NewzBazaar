@@ -518,6 +518,10 @@ nav menuitem {
     align-items: center;
     justify-content: center;
     display: flex;
+    position: sticky;
+    /* z-index: -7; */
+    z-index: 1;
+
 
  }
 
@@ -529,7 +533,7 @@ nav menuitem {
    /* opacity: 0.859; */
    height: 100%;
    width: 100%;
-   z-index: -8;
+   /* z-index: -8; */
  }
 
  .box-2
@@ -550,6 +554,8 @@ nav menuitem {
     font-family: 'Cinzel', serif;
     font-size: 3.5rem;
     font-weight: bolder;
+    /* position: sticky;
+    z-index: 1; */
     
  }
 
@@ -605,6 +611,7 @@ nav menuitem {
     align-items: center;
     justify-content: center;
     position: relative;
+    z-index: 2;
 
  }
 
@@ -616,7 +623,7 @@ nav menuitem {
    /* opacity: 0.859; */
    height: 100%;
    width: 100%;
-   z-index: -7;
+   z-index: -6;
    padding: 0px;
  }
 
@@ -1166,3 +1173,80 @@ nav menuitem {
 
 
 
+/* div for main article */
+
+#main-article
+{
+   display: flex;
+   flex-direction: column;
+   position: relative;
+   /* margin-top: 50px; */
+   
+   border-bottom: 1px solid black;
+   width: 100%;
+   align-items: center;
+   justify-content: center;
+   /* border-top: 5px solid black; */
+   padding: 20px 20px;
+   /* padding-top: 0px; */
+}
+
+#article-head
+{
+   margin-left: -1000px;
+   padding: 20px 20px;
+   padding-top: 0px;
+   /* border: 2px solid rebeccapurple; */
+   border-top: 10px solid black;
+   margin-top: -15px;
+   padding-top: 15px;
+   font-size: 45px;  
+   font-family: 'Cinzel', serif;
+   font-weight: lighter;        
+}
+
+.article
+{
+   display: flex;
+   flex-direction: row;
+
+}
+
+.article-img
+{
+   height: 600px;
+   width: 600px;
+   margin-left: -150px;
+   /* border: 2px solid black; */
+   box-shadow: 0px 0px 3px 0px black;
+   position: -webkit-sticky; /* Safari */
+   position: sticky;
+   top: 50px;
+   background: url("/IMG/20.article-img.jpg") center center/cover;
+}
+
+.article-content
+{
+   width: 700px;
+   /* border: 2px solid black; */
+   margin-right: -300px;
+   padding: 20px 20px;
+   margin-left: 20px;
+   font-family: 'Nanum Myeongjo', serif;
+}
+
+/* Extra */
+
+#extra
+{
+   display: flex;
+   position: relative;
+
+}
+
+.extra-1
+{
+   height: 500px;
+   width: 500px;
+   border: 2px solid black\;
+}

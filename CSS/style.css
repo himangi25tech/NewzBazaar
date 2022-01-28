@@ -1240,8 +1240,17 @@ nav menuitem {
 #extra
 {
    display: flex;
+   flex-direction: column;
    position: relative;
-
+   /* margin-top: 50px; */
+   
+   border-bottom: 1px solid black;
+   width: 100%;
+   align-items: center;
+   justify-content: center;
+   /* border-top: 5px solid black; */
+   padding: 20px 20px;
+   /* padding-top: 0px; */
 }
 
 .extra-1
@@ -1249,4 +1258,18 @@ nav menuitem {
    height: 500px;
    width: 500px;
    border: 2px solid black\;
+}
+
+.more-title
+{
+   margin-left: -1000px;
+   padding: 20px 20px;
+   padding-top: 0px;
+   /* border: 2px solid rebeccapurple; */
+   border-top: 10px solid black;
+   margin-top: -15px;
+   padding-top: 15px;
+   font-size: 45px;  
+   font-family: 'Cinzel', serif;
+   font-weight: lighter; 
 }
